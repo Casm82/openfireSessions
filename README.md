@@ -8,7 +8,7 @@
 Все настройки в файле settings.json
 В папке install шаблоны для systemd и cron.
 
-Требования:
-Node.js
-MongoDB
-glibc x86 (/lib/ld-linux.so.2) для HtmlTidy
+# Требования:
+* Node.js
+* MongoDB
+* glibc x86 (/lib/ld-linux.so.2) для HtmlTidy
