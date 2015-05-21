@@ -1,0 +1,24 @@
+{
+  "name": "openfireSessions",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Opefire session loging",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Casm82/openfireSessions"
+  },
+  "author": "Aleksandr Makhnev",
+  "license": "GPL v2",
+  "homepage": "https://github.com/Casm82/openfireSessions",
+  "dependencies": {
+    "mongodb": "2.x",
+    "express": "4.x",
+    "express-middlewares": "0.x",
+    "express-sessions": "1.x",
+    "async": "0.x",
+    "xmldom": "0.x",
+    "xpath": "0.x",
+    "jade": "1.x"
+  }
+}

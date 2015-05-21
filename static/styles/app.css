@@ -1,0 +1,40 @@
+div#crt {
+	margin: 1em;
+	box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+	border: 2px solid silver;
+}
+
+table#users {
+  border-collapse: collapse;
+	border: 1px solid #000;
+	width: 100%;
+}
+
+table#users th, table#users tr, table#users td{
+	border: 1px solid #000;
+}
+
+table#resources  {
+  border-collapse: collapse;
+	border-style: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+table#resources tr, table#resources td {
+	border-style: none;
+}
+
+.resources:nth-child(odd){
+	background: #FFF;
+}
+
+.resources:nth-child(even){
+	background: #E0E0E0;
+}
+
+col.hostname { width: 12em; }
+col.ip { width: 12em; }
+/*col.ts { width: 10em; }*/

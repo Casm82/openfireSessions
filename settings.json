@@ -1,0 +1,15 @@
+{
+	"port":			 3001,
+	"groupName":	"Support team",
+	"openfireConf": {
+		"url":		"https://jabber.domain.ru:9091",
+		"limit":	5000,
+		"login":	"info",
+		"password":	"password" },
+	"domain": 		"domain.ru",
+	"ldapConfig":	{
+		"url":		"ldap://dc.domain.ru",
+		"baseDN":	"dc=domain,dc=ru",
+		"username":	"testuser@domain.ru",
+		"password":	"testpwd" }
+}

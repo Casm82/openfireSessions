@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/styles/layout.css')
+    block css
+    block scripts
+  body
+    header
+      div#headerSearch
+        block header
+      div#headerSession
+        if (session && session.username)
+          div Вы вошли как:&nbsp
+            = session.username
+          div
+            a(href='/logout') Выйти
+
+
+    section
+      block content
+
+    footer
+      small 20.04.2015
+
+//- vim:shiftwidth=4:expandtab:number:list
