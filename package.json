@@ -1,6 +1,6 @@
 {
   "name": "openfireSessions",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "description": "Opefire session loging",
   "main": "app.js",
@@ -12,13 +12,19 @@
   "license": "GPL v2",
   "homepage": "https://github.com/Casm82/openfireSessions",
   "dependencies": {
-    "mongodb": "2.x",
-    "express": "4.x",
-    "express-middlewares": "0.x",
-    "express-sessions": "1.x",
-    "async": "0.x",
-    "xmldom": "0.x",
-    "xpath": "0.x",
-    "jade": "1.x"
+    "activedirectory": "^0.7.2",
+    "async": "^2.0.1",
+    "connect-mongodb-session": "^0.1.1",
+    "express": "^4.14.0",
+    "express-middlewares": "^0.1.1",
+    "express-session": "^1.14.0",
+    "pug": "^2.0.0-beta5",
+    "htmltidy":  "^0.0.6",
+    "mongoose": "^4.5.9",
+    "passport": "^0.3.2",
+    "passport-negotiate": "^0.1.4",
+    "pug": "^2.0.0-beta5",
+    "xmldom": "^0.1.22",
+    "xpath": "^0.0.23"
   }
 }

@@ -1,15 +1,18 @@
 {
-	"port":			 3001,
-	"groupName":	"Support team",
-	"openfireConf": {
-		"url":		"https://jabber.domain.ru:9091",
-		"limit":	5000,
-		"login":	"info",
-		"password":	"password" },
-	"domain": 		"domain.ru",
-	"ldapConfig":	{
-		"url":		"ldap://dc.domain.ru",
-		"baseDN":	"dc=domain,dc=ru",
-		"username":	"testuser@domain.ru",
-		"password":	"testpwd" }
+  "port":      3001,
+  "authLog":   "/var/log/webApps/ofAuth.log",
+  "searchLog": "/var/log/webApps/ofSearch.log",
+  "groupName":  "Support",
+  "openfireConf": {
+    "url":    "https://jabber.company.ru:9091",
+    "limit":  5000,
+    "login":  "info",
+    "password":  "xxxxxx" },
+  "domain":   "company.ru",
+  "mongoConnection": "mongodb://ofUser:xxxxxx@localhost:27017/openfire",
+  "ldapConfig":  {
+    "url":    "ldap://172.16.1.12",
+    "baseDN":  "dc=company,dc=ru",
+    "username":  "support@company.ru",
+    "password":  "xxxxx" }
 }

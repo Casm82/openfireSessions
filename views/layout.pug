@@ -1,6 +1,7 @@
 doctype html
 html
   head
+    meta(charset="utf-8")
     title= title
     link(rel='stylesheet', href='/styles/layout.css')
     block css
@@ -10,17 +11,14 @@ html
       div#headerSearch
         block header
       div#headerSession
-        if (session && session.username)
-          div Вы вошли как:&nbsp
-            = session.username
-          div
-            a(href='/logout') Выйти
-
+        if (session)
+          div= session
+          if (authType == "ldap")
+            div
+              a(href='/logout') Выйти
 
     section
       block content
 
     footer
-      small 20.04.2015
-
-//- vim:shiftwidth=4:expandtab:number:list
+      small 21.12.2015

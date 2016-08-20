@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/styles/login.css')
+  body
+    if (code==401)
+      div#errorMsg
+        p Неверный пароль для пользователя&nbsp
+          strong= username
+        p
+          a(href="/")
+            button Повторить ввод пароля
+    if (code==403)
+      div#errorMsg
+        p Пользователю&nbsp
+          strong= username
+          | &nbspне предоставлен доступ для входа.
+        p Обратитесь к Администратору, для включения пользователя&nbsp
+          strong= username
+          | &nbspв группу&nbsp
+          br
+          strong= group

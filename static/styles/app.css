@@ -1,40 +1,92 @@
 div#crt {
-	margin: 1em;
-	box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
-	border-radius: 4px;
-	border: 2px solid silver;
+  margin: 1em;
 }
 
 table#users {
   border-collapse: collapse;
-	border: 1px solid #000;
-	width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  font-size: 16px;
+  line-height: 18px;
 }
 
-table#users th, table#users tr, table#users td{
-	border: 1px solid #000;
+table#users th, table#users td {
+  border: 1px solid grey;
 }
 
-table#resources  {
+#histWindow table  {
   border-collapse: collapse;
-	border-style: none;
-	width: 100%;
-	margin: 0;
-	padding: 0;
+  border-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0.25em;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
+}
+
+#histWindow table th, #histWindow table td {
+  border: 1px solid #4C9ED9;
+  padding: 0.1em 0.25em;
+}
+
+table#resources {
+  border-collapse: collapse;
+  border-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 table#resources tr, table#resources td {
-	border-style: none;
+  border-style: none;
+  padding: 0.1em 1em;
 }
 
 .resources:nth-child(odd){
-	background: #FFF;
+  background: #FFF;
 }
 
 .resources:nth-child(even){
-	background: #E0E0E0;
+  background: #E0E0E0;
 }
 
 col.hostname { width: 12em; }
 col.ip { width: 12em; }
-/*col.ts { width: 10em; }*/
+
+.search, .buttons {
+  margin: 0 0.25em;
+  float: left;
+}
+
+.buttons button {
+  margin: 0 0.25em;
+  border: 2px solid lightgrey;
+}
+
+.buttons button:hover {
+  background-color: white;
+}
+
+.search input {
+  border: 2px solid lightgrey;
+  padding: 1px;
+}
+
+#update { width: 9em;}
+
+#history {
+  text-decoration: underline dashed;
+  cursor: pointer;
+  font-weight: bolder;
+}
+#history:hover { color: black; }
+
+#histWindow {
+  position: fixed;
+  right: 2em;
+  top: 3em;
+  z-index: 1;
+  background: white;
+  border-radius: 4px;
+  border: 2px solid #4C9ED9;
+}

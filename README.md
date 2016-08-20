@@ -14,3 +14,4 @@
 * Node.js
 * MongoDB
 * glibc x86 (/lib/ld-linux.so.2) для HtmlTidy
+* поддерживает аутентификацию через SPNEGO (нужно сгенерировать kerberos.keytab и перед запуском экспортировать переменную окружения KRB5_KTNAME=<путь>/kerberos.keytab)

@@ -1,5 +1,5 @@
 [Service]
-ExecStartPre=/bin/sleep 60
+ExecStartPre=/bin/sleep 5
 ExecStart=-/opt/node.js/bin/node /srv/webapps/openfireSessions/app.js 2>/dev/null
 Restart=on-failure
 User=webapps
@@ -8,6 +8,7 @@ Environment=PATH=/opt/node.js/bin:/usr/bin:/usr/local/bin
 Environment=NODE_ENV=production
 Environment=HOSTNAME=info.domain.ru
 Environment=NODE_PATH=/opt/node.js/lib/node_modules/
+Environment=KRB5_KTNAME=/srv/webapps/openfireSessions/kerberos.keytab
 
 [Unit]
 After=mongodb.service network.target

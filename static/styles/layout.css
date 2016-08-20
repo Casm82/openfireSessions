@@ -1,33 +1,29 @@
 body {
-	font: normal 16px/18px tahoma, sans;
+  font: normal 14px/16px tahoma, sans;
 }
 
 header {
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 2.5em;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 2.5em;
   color: #FFF;
-	background: #4C9ED9;
-	border-bottom: 2px solid silver;
+  background: #4C9ED9;
+  border-bottom: 2px solid silver;
 }
 
-header a { font-weight: bolder; 
-	color: white;
-	text-decoration: underline;
-	text-decoration-style: dashed;
-	-moz-text-decoration-style: dotted;
+header a { font-weight: bolder;
+  color: white;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  -moz-text-decoration-style: dotted;
 }
 
 header a:hover { color: black; }
 
-.search {
-	float: left;
-}
-
 #headerSearch {
-	margin: 0.5em 1em;
+  margin: 0.5em 0;
   position: absolute;
 }
 
@@ -37,7 +33,7 @@ header a:hover { color: black; }
 }
 
 #headerSession div {
-	text-align: right;
+  text-align: right;
 }
 
 h1 { font-size: 1.1em;}
@@ -47,14 +43,14 @@ h2 { font-size: 1.0em;}
 section { padding: 2em 0 1em; }
 
 footer {
-    position: fixed;
-    right: 1em;
-    bottom: 1em;
-    font-size: 0.85em;
-    text-align: right;
-    z-index: 1;
-		background: #FFF;
-		border: 1px solid silver;
-		border-radius: 2px;
-		padding: 0 0.25em;
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  font-size: 0.85em;
+  text-align: right;
+  z-index: 1;
+  background: #FFF;
+  border: 1px solid silver;
+  border-radius: 2px;
+  padding: 0 0.25em;
 }

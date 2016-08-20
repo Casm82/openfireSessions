@@ -1,0 +1,24 @@
+extends layout
+block css
+  link(rel='stylesheet', href='/styles/app.css')
+block scripts
+  script(src="/scripts/app.js")
+block header
+  div.buttons
+    button#update Обновить БД
+    button#clear Очистить
+    button#search Искать
+  div.search
+    span Логин:
+    input#login(size="7" type="search" autofocus placeholder="логин")
+  div.search
+    span Имя компьютера:
+    input#hostname(size="20" type="search" placeholder="имя компьютера")
+  div.search
+    span IP адрес:
+    input#ip(size="15" type="search" placeholder="ip адрес")
+  div#history.search История
+block content
+  div#histWindow("hidden"=true)
+  div#crt
+    p Для поиска заполните фильтр

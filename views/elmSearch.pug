@@ -1,0 +1,31 @@
+if cursor.length
+  table#users
+    tr
+      th Имя пользователя
+      th Данные о ресурсе подключения
+    each user in cursor
+      tr
+        td= user["_id"]
+        td
+          table#resources
+            col.hostname
+            col.ip
+            col.ts
+            each resource in user["resources"]
+              tr.resources
+                - var timeFix = resource.ts.match(/(\d{2})\.(\d{2})\.(\d{4}), (\d{1,2}):(\d{1,2}):(\d{1,2})/)
+                if (timeFix)
+                  - var dd = timeFix[1]
+                  - var mo = timeFix[2]
+                  - var yy = timeFix[3]
+                  - var hh = (timeFix[4].length==2)?timeFix[4]:"0"+timeFix[4]
+                  - var mm = timeFix[5]
+                  - var ss = timeFix[6]
+                  - var time = new Date(yy+"-"+mo+"-"+dd+"T"+hh+":"+mm+":"+ss+"+0400");
+                else
+                  - var time = new Date(resource.ts)
+                td= resource.hostname
+                td= resource.ip
+                td= time.toLocaleString()
+else
+  p Не найдено записей, удовлетворяющих поисковому запросу.
