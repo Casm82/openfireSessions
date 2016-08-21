@@ -23,7 +23,6 @@
     "mongoose": "^4.5.9",
     "passport": "^0.3.2",
     "passport-negotiate": "^0.1.4",
-    "pug": "^2.0.0-beta5",
     "xmldom": "^0.1.22",
     "xpath": "^0.0.23"
   }
